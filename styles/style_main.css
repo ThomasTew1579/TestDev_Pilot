@@ -3,6 +3,10 @@
     /* main====================================================================== */
 
 
+    li{
+        list-style: none;
+    }
+
 /* Meet the future of your organization today-------------------------------------------------------- */
 
 
@@ -195,6 +199,7 @@
 #challenge{
     background:linear-gradient(-3.5deg, rgb(255, 255, 255) 9.9%, rgba(0, 0, 0, 0) 10%), linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
     padding-top: 340px ;
+    padding-bottom: 360px ;
     transform: translateY(-212px);
     color: white;
     display: flex;
@@ -202,7 +207,7 @@
     align-items: center;
 }
 
-#challenge.title{
+#challenge .title{
     font-weight: 500;
     font-size: 60px;
     line-height: 60px;
@@ -215,20 +220,57 @@
 #challenge .card{
     background-color: #fff;
     width: 90vw ;
+    height: 800px;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
     margin-top: 50px;
     color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
-#challenge .card div{
+#challenge .card .text{
     width: 50%;
+    padding-right: 70px;
+}
+
+#dataFactory .illustration{
+   margin: auto;
     height: 100%;
 }
-#challenge .card img{
-    width: 40%;
+
+#dataFactory .text{
+    display: flex;
+    flex-direction: column;
     height: 100%;
+}
+
+.text h1{
+    margin-top: 71px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.text h1 img{
+    height: 38px;
+    margin-right: 24px ;
+}
+
+
+
+
+
+#propilot .text {
+    margin-left: 64px;
+}
+
+#propilot .illustration{
+    right: 0;
+    height: 100%;
+
 }
 
 
