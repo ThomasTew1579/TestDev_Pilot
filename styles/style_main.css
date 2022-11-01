@@ -46,6 +46,7 @@
 #meetTheFutur h1{
     font-size: 72px;
     line-height: 89px;
+    height: 80px;
     margin: 0;
     font-family: 'Outfit';
     font-weight: 600;
@@ -104,7 +105,6 @@
 
 #textSlide{
     transform: rotate(-3.5deg);
-
 }
 
 .textSlide {
@@ -118,7 +118,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #26c1d9;
-    animation: slideText 40s linear infinite;
+    animation: slideText 50s linear infinite;
 }
 
 @keyframes slideText {
@@ -133,9 +133,12 @@
 }
 
 .textSlide span{
-    -webkit-text-stroke: 2px #26c1d9;
+    /* -webkit-text-stroke: 2px #26c1d9; */
+    /* color: rgba(0, 0, 0, 0); */
     /* j'ai pas de meilleur solution avec cette police pour avoir juste la bordure */
-    color: rgba(250, 250, 250, 0);
+    color: #082a4b;
+    text-shadow: 2px 0 0 #26c1d9, 2px 2px 0 #26c1d9, 0 2px 0 #26c1d9, -2px 2px 0 #26c1d9, -2px 0 0 #26c1d9, -2px -2px 0 #26c1d9, 0 -2px 0 #26c1d9, 2px -2px 0 #26c1d9;
+
 }
 
 
@@ -152,18 +155,23 @@
     align-items: center;
     padding-top: 70px;
 }
+.computerScreen{
+    position: absolute;
+    height: 0;
+}
 
 #chaos img{
     width: 1062px;
-    height: 423px;
-    margin-top: 87px;
+    margin-top: 152px;
     z-index: 10;
+    position: relative;
 }
 
 #chaos .content{
     display: flex;
     flex-direction: row;
     width: 1062px ;
+    margin-bottom: 300px;
 }
 
 #chaos .left{
@@ -197,10 +205,10 @@
 /* How we help tackle these challenges?----------------------------------------------------------------- */
 
 #challenge{
-    background:linear-gradient(-3.5deg, rgb(255, 255, 255) 9.9%, rgba(0, 0, 0, 0) 10%), linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+    background:linear-gradient(-3.5deg, rgb(255, 255, 255) 6.9%, rgba(0, 0, 0, 0) 7%), linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
     padding-top: 340px ;
-    padding-bottom: 360px ;
-    transform: translateY(-212px);
+    padding-bottom: 320px ;
+    /* transform: translateY(-212px); */
     color: white;
     display: flex;
     flex-direction: column;
@@ -232,19 +240,8 @@
 }
 
 #challenge .card .text{
-    width: 50%;
     padding-right: 70px;
-}
-
-#dataFactory .illustration{
-   margin: auto;
-    height: 100%;
-}
-
-#dataFactory .text{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    width: 480px;
 }
 
 .text h1{
@@ -259,8 +256,63 @@
     margin-right: 24px ;
 }
 
+#challenge ul {
+    margin-top: 32px;
+    margin-bottom: 42px;
+    padding: 0;
+}
+
+#challenge li {   
+    height: 84px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    border-radius: 10px ;
+    transition: 0.2s;
+}
+
+#challenge li:hover{
+    background-color: #F0FDFF;
+}
+
+#challenge li:hover i{
+    background-color: rgb(255, 255, 255);
+}
 
 
+
+#challenge li i{
+    margin: 16px;
+    background-color: #F0FDFF;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.54;
+    border-radius: 5px ;
+    cursor: grab;
+}
+
+/* datafactory-------------------------------- */
+
+#dataFactory .illustration{
+    margin: auto;
+    height: 100%;
+    
+}
+
+#dataFactory .text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 480px;
+}
+
+
+/* --------------------------------datafactory */
+
+
+/* propilot------------------------------------ */
 
 
 #propilot .text {
@@ -270,29 +322,329 @@
 #propilot .illustration{
     right: 0;
     height: 100%;
+    
+}
 
+/* ------------------------------------propilot */
+
+/* -----------------------------------------------------------------How we help tackle these challenges? */
+
+
+/* They trust Pilot'in---------------------------------------------------------------------------------- */
+
+#trust{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/assets/img/shape-dot-white-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
+    padding-bottom: 50px;
+}
+
+#trust h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 45px;
+    text-align: center;
+}
+
+#trust h1 span{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#trust .card{
+    background-color: #072038;
+    width: 90vw ;
+    height: 600px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+#trust .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 630px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 10%, rgba(7,32,56,1) 85%), url(/assets/img/Casclient-Exki.jpg);
+    background-size: contain;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+
+#trust .left i{
+    font-size: 60px ;
+    color: #26C1D9 ;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+#trust .right{
+    height: 70%;
+    width: 50%;
+    margin: auto;
+}
+
+#trust .right .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#trust .right img{
+    width: 100px;
+}
+
+#trust .right h3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #26C1D9;
+}
+
+#trust .right p{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+    width: 500px;
+    margin-top: 0;
+}
+
+#trust .right i {
+    width: 60px;
+    height: 60px;
+    font-size: 20px ;
+    text-align: center;
+    line-height: 3;
+    color: #ffffff ;
+    border-radius: 50%;
+    border: white 1px solid; 
+    margin-right: 20px ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#trust .right i:hover{
+    background-color: white;
+}
+
+
+/* ----------------------------------------------------------------------------------They trust Pilot'in */
+
+
+/* Nos articles de blog---------------------------------------------------------------------------------- */
+
+
+#article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#article h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    color: #072038;
+}
+
+#article  h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    width: 846px;
+    color: #072038;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+#article .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw ;
+}
+
+#article article{
+    width: 350px;
+    padding: 32px 24px;
+    border: 1px solid #A0BDC0;
+    border-radius: 15px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+#article article:hover{
+    border: 1px solid #a0bdc000;
+    background-color: #F0FDFF;
+}
+
+#article .tagList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 8px;
+    gap: 10px;
+    width: 84px;
+    height: 20px;
+    border: 1px solid #26C1D9;
+    border-radius: 5px;
+    color: #26C1D9 ;
+    cursor: pointer;
+    margin: 0;
+    transition: 0.3s;
+}
+
+#article .tagList:hover{
+    background-color: #26C1D9 ;
+    color: rgb(252, 252, 252);
+
+}
+
+article h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #072038;
+    margin-top: 30px;
+}
+
+article p {
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #072038;
+    width: 362.67px;
+    height: 138px;
+    margin-top: 30px;
+}
+
+article .author{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.author h4{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #072038;
+    width: 240px;
+    margin-left: 10px;
+}
+
+.author i {
+    width: 50px;
+    height: 50px;
+    font-size: 20px ;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 50%;
+    border:  1px solid; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.author i:hover{
+    background-color: #000;
+    color: rgb(255, 255, 255);
+}
+
+
+.articleBtn{
+    margin-top: 30px;
+}
+
+/* ----------------------------------------------------------------------------------Nos articles de blog */
+
+/* Ready to meet the future of your organization?-------------------------------------------------------- */
+
+#ready{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#ready .card{
+    background-color: #072038;
+    width: 90vw ;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#ready img{
+    height: 100%;
+}
+
+#ready .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 70%; */
+}
+
+#ready .content{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ready h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    color: #26C1D9;
+    margin-bottom: 20px;
+}
+
+#ready h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+    width: 592px;
+    margin: 0;
 }
 
 
 
 
 
-
-
-
-
-
-
-/* -----------------------------------------------------------------How we help tackle these challenges? */
-
-
-
-
-
-
-
-
-
+/* --------------------------------------------------------Ready to meet the future of your organization? */
 
 
 

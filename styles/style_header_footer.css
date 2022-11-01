@@ -241,7 +241,7 @@ footer{
     height: 436px;
     background-image: url(/assets/img/shapes-footer.png);
     background-repeat: no-repeat;
-    background-position: right -300% top 15%;
+    background-position: right 0% top 15%;
 }
 
 #navFooter ul{
