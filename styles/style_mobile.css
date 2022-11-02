@@ -1,4 +1,145 @@
 @media screen and (max-width:1200px) {
-   
+
+
+    #meetTheFutur{
+        height: 1600px;
+        justify-content: flex-start;
+    }
+
+   #meetTheFutur .content{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: auto;
+   }
+
+   #meetTheFutur .left{
+    width: 100%;
+    height: 700px;
+   }
+
+   #meetTheFutur .right img{
+    height: 60vw ;
+}
+
+   #chaos .content{
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+   }
+
+    #chaos .right{
+    width: 90%;
+    margin-top: 20px;
+    }
+
+    #chaos img{
+    display: none;
+    }
+
+    #challenge{
+        padding-top: 50px;
+    }
+
+    #challenge .card{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    #challenge .card .text{
+        width: 80%;
+    }
+
+    #dataFactory .illustration{
+    height: 100vw; 
+    }
+
+    #propilot .illustration{
+    right: 0;
+    height: 100vw;
     
+    }
+
+
+    #trust .card{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #trust .left{
+        height: 100vw;
+    }
+
+    #trust .right{
+        width: 90%;
+        height: 400px;
+    }
+
+    #article  h3{
+        width: 90vw;
+    }
+
+    #article .cards{
+    flex-direction: column;
+    }
+
+    #article article{
+        width: 80vw;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    article p{
+        width: 90%;
+    }
+
+    #ready .card{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #ready .content{
+        margin-left: 20px;
+    }
+
+    footer{
+    height: 70%;
+    background-position: right 0% bottom 0%;
+}
+
+
+    #navFooter ul{
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #footer div{
+    margin: 10px;
+    font-size: 16px;
+    }
+
+    .solution{
+        margin: 20px;
+    }
+
+    .propilot{
+        margin: 20px;
+    }
+
+    .book{
+        margin: 20px;
+    }
+
+
+   
+}
+
+
+@media screen and (max-width:590px){
+    #meetTheFutur h1{
+    font-size: 10vw;
+   }
 }

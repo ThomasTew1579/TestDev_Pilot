@@ -205,9 +205,6 @@ header a{
     line-height: 24px;
 }
 
-.arrowHover a h4{
-    width: 100px;
-}
 
 
 .arrowHover a::after{
@@ -305,6 +302,11 @@ footer{
 #footer span{
     text-decoration: underline;
     font-weight: 900;
+}
+
+.demo h4{
+    width: 150px;
+    color: rgb(255, 255, 255);
 }
 
 

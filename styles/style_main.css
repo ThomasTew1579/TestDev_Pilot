@@ -124,11 +124,9 @@
 @keyframes slideText {
     from{
         transform: translate(1450px);
-        /* transform: translate(0%); */
     }
     to{
         transform: translate(-6700px);
-        /* transform: translate(-40%); */
     }  
 }
 
@@ -141,6 +139,9 @@
 
 }
 
+.talk h4{
+    width: 90px;
+}
 
 
 /* --------------------------------------------------------Meet the future of your organization today */
@@ -199,7 +200,21 @@
     color: #072038;
 }
 
+.discover h4{
+    width: 200px;
+}
 
+.discover a{
+    width: 200px;
+}
+
+.discover{
+    width: 165px;
+}
+
+.discover:hover{
+    width: 200px;
+}
 /* --------------------------------------------------------------------------------Get out of the chaos */
 
 /* How we help tackle these challenges?----------------------------------------------------------------- */
@@ -208,7 +223,6 @@
     background:linear-gradient(-3.5deg, rgb(255, 255, 255) 6.9%, rgba(0, 0, 0, 0) 7%), linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
     padding-top: 340px ;
     padding-bottom: 320px ;
-    /* transform: translateY(-212px); */
     color: white;
     display: flex;
     flex-direction: column;
@@ -297,8 +311,7 @@
 
 #dataFactory .illustration{
     margin: auto;
-    height: 100%;
-    
+    height: 100%; 
 }
 
 #dataFactory .text{
@@ -306,6 +319,22 @@
     flex-direction: column;
     height: 100%;
     width: 480px;
+}
+
+.solution h4{
+    width: 220px;
+}
+
+.solution a{
+    width: 220px;
+}
+
+.solution{
+    width: 175px;
+}
+
+.solution:hover{
+    width: 225px;
 }
 
 
@@ -322,7 +351,22 @@
 #propilot .illustration{
     right: 0;
     height: 100%;
-    
+}
+
+.propilot h4{
+    width: 260px;
+}
+
+.propilot a{
+    width: 260px;
+}
+
+.propilot{
+    width: 230px;
+}
+
+.propilot:hover{
+    width: 270px;
 }
 
 /* ------------------------------------propilot */
@@ -482,6 +526,7 @@
     border-radius: 15px;
     height: 100%;
     transition: 0.3s;
+    margin-top: auto;
 }
 
 #article article:hover{
@@ -576,7 +621,22 @@ article .author{
 
 .articleBtn{
     margin-top: 30px;
+    width: 145px;
 }
+
+.articleBtn h4{
+    width: 130px;
+}
+
+.articleBtn a{
+    width: 190px;
+}
+
+.articleBtn:hover{
+    width: 190px;
+}
+
+
 
 /* ----------------------------------------------------------------------------------Nos articles de blog */
 
@@ -612,8 +672,6 @@ article .author{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* height: 70%; */
 }
 
 #ready .content{
@@ -638,6 +696,22 @@ article .author{
     color: #FFFFFF;
     width: 592px;
     margin: 0;
+}
+
+.book{
+    width: 120px;
+}
+
+.book h4{
+    width: 160px;
+}
+
+.book a{
+    width: 160px;
+}
+
+.book:hover{
+    width: 160px;
 }
 
 
