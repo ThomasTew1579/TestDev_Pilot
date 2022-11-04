@@ -164,7 +164,7 @@
 #chaos img{
     width: 1062px;
     margin-top: 152px;
-    z-index: 10;
+    z-index: 5;
     position: relative;
 }
 
@@ -722,7 +722,36 @@ article .author{
 /* --------------------------------------------------------Ready to meet the future of your organization? */
 
 
+/* parallaxe----------------------------------------------------------------------------------------- */
 
+.parallaxe{
+    position: relative;
+    height: 0;
+    width: 100%;
+    display: flex;
+}
+
+.pRight{
+    justify-content: flex-end;
+    z-index: -1;
+}
+
+.pLeft{
+    justify-content: flex-start;
+    z-index: 1;
+    opacity: 90%;
+}
+
+.parallaxe img{
+    width: initial;
+    height: 300px;
+    position: absolute;
+    transition: 1s;
+}
+
+
+
+/* -----------------------------------------------------------------------------------------parallaxe */
 
 
 

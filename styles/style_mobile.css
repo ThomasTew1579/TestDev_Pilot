@@ -1,6 +1,11 @@
 @media screen and (max-width:1200px) {
 
 
+    #navHeader{
+        display: none;
+    }
+
+
     #meetTheFutur{
         height: 1600px;
         justify-content: flex-start;
