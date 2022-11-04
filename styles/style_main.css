@@ -414,14 +414,109 @@
 
 #trust .left{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 630px;
     height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 10%, rgba(7,32,56,1) 85%), url(/assets/img/Casclient-Exki.jpg);
-    background-size: contain;
-    background-clip: border-box;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#trust .left img{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 10%, rgba(7,32,56,1) 85%);
+    z-index: 0;
+    transition: 0.3s;
+}
+
+
+
+#player{
+    position: absolute;
+    z-index: 2;
+}
+
+#afterPlayer{
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(7,32,56,1) 90%);    
+    width: 90px;
+    z-index: 2;
+    transform: translateX(-70px);
+}
+
+#galleryVideo.activeR{
+    animation: activeImgR 1s ease forwards;
+}
+
+#galleryVideo.activeL{
+    animation: activeImgL 1s ease forwards;
+}
+
+#galleryVideo.unactiveR{
+    animation: unactiveImgL 1s ease forwards reverse;
+}
+
+#galleryVideo.unactiveL{
+    animation: unactiveImgR 1s ease forwards reverse;
+}
+
+
+@keyframes activeImgR {
+   from{
+    transform: translateX(1000%);
+} 
+to{
+    transform: translateX(0%);
+   }
+}
+
+@keyframes activeImgL {
+   from{
+    background-position: -10000%;
+} 
+to{
+    background-position: 0%;
+   }
+}
+
+@keyframes unactiveImgR {
+   from{
+    transform: translateX(1000%);
+} 
+to{
+    transform: translateX(0%);
+   }
+}
+
+@keyframes unactiveImgL {
+   from{
+    background-position: -10000%;
+} 
+to{
+    background-position: 0%;
+   }
+}
+
+#counterCard {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    margin-top: 40px;
+}
+
+#counterCard div{
+    width: 10px;
+    height: 9px;
+    background: #A0BDC0;
+    border-radius: 14px;
+    margin-right: 10px;
+    flex-grow: 0;
+    transition: 0.3s;
+}
+
+#counterCard .active{
+    flex-grow: 1;
+    background: #26C1D9;
 }
 
 #trust .left i{
@@ -429,8 +524,54 @@
     color: #26C1D9 ;
     background-color: white;
     border-radius: 50%;
+    transition: 0.5s;
 }
 
+#trust .left i:hover{
+    scale: 1.5;
+}
+
+
+#galleryImg.active{
+    animation: activeContent 1s  forwards;
+    opacity: 0;
+}
+
+#galleryAuthor.active{
+    animation: activeContent 1s 0.1s forwards;
+    opacity: 0;
+}
+
+#galleryText.active{
+    animation: activeContent 1s 0.2s  forwards;
+    opacity: 0;
+}
+
+#galleryImg.unactive{
+    animation: activeContent 1s ease forwards reverse;
+    opacity: 100%;
+}
+
+#galleryAuthor.unactive{
+    animation: activeContent 1s ease  0.1s forwards reverse;
+    opacity: 100%;
+}
+
+#galleryText.unactive{
+    animation: activeContent 1s ease 0.2s forwards reverse;
+    opacity: 100%;
+}
+
+
+
+@keyframes activeContent {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
 
 #trust .right{
     height: 70%;
@@ -460,6 +601,7 @@
     line-height: 40px;
     color: #FFFFFF;
     width: 500px;
+    margin-bottom: 10px;
     margin-top: 0;
 }
 

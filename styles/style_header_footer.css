@@ -183,6 +183,13 @@ header a{
     margin-left: 20px;
     color: #26C1D9 ;
     z-index: 100;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#langage:hover{
+    color: #26c1d96d ;
+
 }
 
 .actualLangage{
@@ -193,9 +200,6 @@ header a{
     margin: 0;
 }
 
-.languageList{
-    display: none;
-}
 
 .arrowHover h4{
     color: #000;
